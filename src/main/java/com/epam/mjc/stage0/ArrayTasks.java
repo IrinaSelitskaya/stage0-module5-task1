@@ -95,7 +95,18 @@ public class ArrayTasks {
      * arr = [1, 2]         -> [1, 2]
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
-
+     int x=0;
+     for(int i=0;i<arr.length;i++){
+      if(arr[i]>0){
+       x++;}
+     }
+     int[] positive=new int[x];
+     int j=0;
+     for(int i=0;i<arr.length;i++){
+      if(arr[i]>0){
+       positive[j]=arr[i];
+       j++;} 
+     } 
     }
 
     /**
