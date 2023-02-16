@@ -11,7 +11,8 @@ public class ArrayTasks {
      * Return a String[] array that will list all the seasons of the year, starting with winter.
      */
     public String[] seasonsArray() {
-     String[] seasonsArray={"winter","spring","summer","autumn"};
+     String[] seasons={"winter","spring","summer","autumn"};
+     return seasons;
     }
 
     /**
@@ -25,11 +26,12 @@ public class ArrayTasks {
      * length = 5  -> [1, 2, 3, 4, 5]
      */
     public int[] generateNumbers(int length) {
-     int[] generateNumbers=new int[length];
+     int[] numbers=new int[length];
      int x=1;
      for(int i=0;i<length;i++){
-      generateNumbers[i]=x;
+      numbers[i]=x;
       x++;} 
+     return numbers;
     }
 
     /**
@@ -46,7 +48,7 @@ public class ArrayTasks {
      for(int i=0;i<arr.length;i++){
       x=arr[i];
       sum+=x;}
-     System.out.println(sum);
+     return sum;
     }
 
     /**
@@ -65,7 +67,7 @@ public class ArrayTasks {
        index=i;
        break;}   
      }
-     System.out.println(index);
+     return index;
     }
 
     /**
@@ -78,9 +80,10 @@ public class ArrayTasks {
      * arr = ["pineapple", "apple", "pen"] -> ["pen", "apple", "pineapple"]
      */
     public String[] reverseArray(String[] arr) {
-     String[] reverseArray=new String[arr.length];
+     String[] reverse=new String[arr.length];
      for(int i=0;i<arr.length;i++){
-      reverseArray[i]=arr[arr.length-1-i];} 
+      reverse[i]=arr[arr.length-1-i];} 
+     return reverse;
     }
 
     /**
@@ -107,6 +110,7 @@ public class ArrayTasks {
        positive[j]=arr[i];
        j++;} 
      } 
+     return positive;
     }
 
     /**
@@ -137,5 +141,6 @@ public class ArrayTasks {
        arr[i][z]=arr[i][x];
        arr[i][x]=temp;}
       } 
+      return arr;
     }
 }
