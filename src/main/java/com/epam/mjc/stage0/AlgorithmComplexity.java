@@ -27,20 +27,20 @@ public class AlgorithmComplexity {
      * Return the complexity of accessing an array element by index.
      */
     public Complexity arrayIndexItemAccess() {
-     return O_1;
+     return Complexity.O_1;
     }
 
     /**
      * Return the complexity of a binary search.
      */
     public Complexity binarySorting() {
-     return O_LOG_N;
+     return Complexity.O_LOG_N;
     }
 
     /**
      * Return the complexity of the twoCycleSorting algorithm.
      */
     public Complexity twoCycleSorting() {
-     return O_N_2;
+     return Complexity.O_N_2;
     }
 }
